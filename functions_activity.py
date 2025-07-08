@@ -13,10 +13,10 @@ def total_price(item1, item2): # Function that gets the total price of items 1 a
 print(total_price("Pizza", "Burger")) # Prints total price annd item 1 and 2: 6.98
 
 def price_difference(item1, item2): # Function that gets the price difference of items 1 and 2
-    price_difference = abs (menu[item1] - menu[item2]) # item 1 - item 2; which is a negative number, but using abs, it makes the number positive
+    price_difference = abs (menu[item1] - menu[item2]) # item 1 - item 2; which is a negative number, but using abs, makes the number positive
     return price_difference # Returns the difference value of items 1 and 2
 
-print(price_difference("Pizza", "Burger")) # Prints price difference between item 1 and 2: 1.0 (-1.0 if abs wasn't included)
+print(price_difference("Pizza", "Burger")) # Prints price difference between item 1 and 2: 1.0 (-1.0 if abs weren't included)
 
 def inflation(menu, inflation_rate): # Function that inflates the price of all items by a value
     return {item: price * inflation_rate for item, price in menu.items()} # Returns items 1-6, newly inflated values
